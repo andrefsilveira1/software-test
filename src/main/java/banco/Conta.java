@@ -1,7 +1,7 @@
 package banco;
 
 
-public class Conta{
+public class Conta {
 
 	private String codigo;
 	private double saldo = 0;
@@ -18,7 +18,7 @@ public class Conta{
 	public double debitar (double valor) throws OperacaoIlegalException {
 		
 		
-		if( valor > 0 ){
+		if( valor > 0 && valor <= saldo ) {
 	         saldo = saldo-valor; 
 	    }
 		else{
@@ -47,7 +47,11 @@ public class Conta{
 	 * OperacaoIlegalException é lançada*/
 
 	 public void transferir (Conta destino, double valor) throws OperacaoIlegalException {
-		 this.creditar(valor);
+
+		 if(destino.codigo.equals(this.codigo)) {
+			throw new OperacaoIlegalException();
+		 }
+		 destino.creditar(valor);
 		 this.debitar(valor);
       }	
 	
