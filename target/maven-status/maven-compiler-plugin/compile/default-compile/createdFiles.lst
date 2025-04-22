@@ -1,2 +1,9 @@
+param/temperature/Celsius.class
+param/Addition.class
 banco/Conta.class
+param/temperature/Fahrenheit.class
+param/CalculoImpostoRenda.class
+param/temperature/TempException.class
 banco/OperacaoIlegalException.class
+param/temperature/Temperatura.class
+param/temperature/ConversorTemperatura.class

@@ -1,6 +1,7 @@
 test/java/tdd/DepositoTest.class
-test/java/tdd/ContaCorrente.class
+param/CalculoImpostoDeRendaTest.class
 test/java/tdd/Deposito.class
 basico/JUnitBasicoTest.class
 test/java/tdd/ContaCorrenteTest.class
 banco/ContaTest.class
+test/java/tdd/ContaCorrente.class
